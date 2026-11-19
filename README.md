@@ -36,7 +36,7 @@ scipy: 1.18.0
 
 ## 2. Data availability
 
-Data will be made available on request.
+The raw measurement data will be made available on request. The code used in this work is available at https://github.com/Lin-Chuanping/Pulsed-and-dynamic-excitation-based-battery-grading.
 
 
 
