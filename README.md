@@ -1,6 +1,6 @@
 # Fast Capacity Estimation for Production-Line Screening of Inventory Battery Cells
 
-Code and datasets for the paper:
+Code repository for the paper:
 
 > **Fast capacity estimation for production-line screening of inventory battery cells via combined pulsed and dynamic excitation**
 
@@ -10,15 +10,17 @@ Code and datasets for the paper:
 
 This repository contains the code for our paper *"Fast capacity estimation for production-line screening of inventory battery cells via combined pulsed and dynamic excitation."*
 
-We openly release the complete dataset together with runnable, notebook-based code. The code documents, in detail, the **data preprocessing**, **feature engineering**, and **machine-learning modeling** of this work, and reports results separately and in full for both **LFP cells** and **NCM cells**.
+The code documents, in detail, the **data preprocessing**, **feature engineering**, and **machine-learning modeling** of this work, and reports results separately and in full for both **LFP cells** and **NCM cells**.
+
+> **Note on the dataset:** owing to confidentiality constraints, the raw measurement data are **not** publicly released. The `XJTU-EVIR Mixed-excitation datasets/` folder is kept only as a placeholder documenting the expected directory layout. See [Data availability](#2-data-availability).
 
 ### Repository structure
 
 | Item | Description |
 | --- | --- |
-| `XJTU-EVIR Mixed-excitation datasets/` | Mixed-excitation (DC pulse + dynamic excitation) test datasets for **61 LFP cells** and **74 NCM cells**. The data are intended for the task of fast capacity screening of inventory cells. Please refer to the paper for details. |
-| `features_csv/` | Feature-engineering tables for the 61 LFP cells and 74 NCM cells, ready for tabular machine-learning tasks. |
-| `Pulsed-and-dynamic-excitation-based-battery-grading.ipynb` | Fully runnable source code covering feature engineering, machine-learning modeling, and the presentation of capacity-estimation results. |
+| `XJTU-EVIR Mixed-excitation datasets/` | Placeholder for the mixed-excitation (DC pulse + dynamic excitation) dataset of **61 LFP cells** and **74 NCM cells**. The raw data are *not* included; the folder documents the layout the notebook expects. |
+| `features_csv/` | **Included.** Feature-engineering tables for the 61 LFP and 74 NCM cells, ready for tabular machine-learning tasks. This is all that is needed to reproduce the modeling results. |
+| `Pulsed-and-dynamic-excitation-based-battery-grading.ipynb` | **Included.** Runnable source code covering data preprocessing, feature engineering, machine-learning modeling, and the presentation of capacity-estimation results. |
 
 ### Environment
 
@@ -32,21 +34,16 @@ sklearn: 1.9.0
 scipy: 1.18.0
 ```
 
-### Usage
+## 2. Data availability
 
-```bash
-git clone <this-repository-url>
-cd <repository-name>
-jupyter notebook Pulsed-and-dynamic-excitation-based-battery-grading.ipynb
-```
+Data will be made available on request.
 
-Run the notebook cells in order. The notebook reads the raw data from `XJTU-EVIR Mixed-excitation datasets/`, then reproduces the feature engineering, model training, and capacity-estimation results for the LFP and NCM cells.
 
----
 
-## 2. Citation
 
-If you find our code or dataset useful, please cite our paper:
+## 3. Citation
+
+If you find our code useful, please cite our paper:
 
 ```bibtex
 @article{Lin2026Fast,
